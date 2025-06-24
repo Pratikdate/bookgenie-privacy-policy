@@ -13,42 +13,56 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+      background: #f1f5f9;
       color: #212529;
-      padding: 40px 20px;
+      padding: 50px 20px;
     }
 
     .container {
       background-color: #ffffff;
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
-      padding: 40px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
+      padding: 50px 40px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      animation: fadeIn 0.5s ease-in;
     }
 
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-      color: #343a40;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .header {
+      background: linear-gradient(to right, #0077cc, #00b4d8);
+      color: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
     }
 
     h2 {
-      font-size: 1.5rem;
-      margin-top: 30px;
-      margin-bottom: 10px;
+      font-size: 1.7rem;
       color: #0077cc;
+      margin-top: 40px;
+      margin-bottom: 15px;
     }
 
     p, li {
-      font-size: 1rem;
-      margin-bottom: 12px;
-      line-height: 1.6;
+      font-size: 1.05rem;
+      margin-bottom: 15px;
+      line-height: 1.7;
+      color: #333;
     }
 
     ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
+      padding-left: 25px;
+      margin-bottom: 25px;
     }
 
     a {
@@ -61,73 +75,80 @@
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 60px;
       font-size: 0.9rem;
-      color: #6c757d;
       text-align: center;
+      color: #666;
     }
 
     @media (max-width: 600px) {
       .container {
-        padding: 20px;
+        padding: 30px 20px;
       }
 
-      h1 {
-        font-size: 1.8rem;
+      .header h1 {
+        font-size: 2rem;
       }
 
       h2 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> June 21, 2025</p>
+    <div class="header">
+      <h1>Privacy Policy</h1>
+      <p>Effective Date: June 21, 2025</p>
+    </div>
 
-    <p><strong>BookGenie</strong> (“we”, “our”, or “us”) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+    <p><strong>BookGenie</strong> ("we", "our", or "us") values your trust. This Privacy Policy outlines how we collect, use, and protect your personal information when you use our mobile application.</p>
 
     <h2>1. Information We Collect</h2>
     <ul>
-      <li><strong>Personal Information:</strong> When you create an account, we may collect your name, email address, and other details you voluntarily provide.</li>
-      <li><strong>Usage Data:</strong> We may collect data on how you interact with the app (e.g., pages visited, books read, features used).</li>
-      <li><strong>Device Info:</strong> We may collect basic information such as device type, OS version, and crash logs to improve app performance.</li>
+      <li><strong>Personal Information:</strong> When you create an account, we may collect your name, email address, and other relevant information you provide.</li>
+      <li><strong>Usage Data:</strong> We may collect details like books read, time spent on pages, and features accessed to enhance your reading experience.</li>
+      <li><strong>Device Information:</strong> Technical information such as device model, OS version, crash logs, and performance metrics may be collected to ensure smooth functionality.</li>
+      <li><strong>Optional Feedback:</strong> You may provide feedback, reviews, or suggestions which help us improve the app.</li>
     </ul>
 
     <h2>2. How We Use Your Information</h2>
-    <p>We use your information to:</p>
     <ul>
-      <li>Provide and maintain the app’s functionality</li>
-      <li>Improve user experience</li>
-      <li>Respond to your support queries</li>
-      <li>Notify you of updates or changes</li>
+      <li>To operate and maintain the core features of the app</li>
+      <li>To personalize and enhance your user experience</li>
+      <li>To respond to support or feedback inquiries</li>
+      <li>To send important updates, notifications, or new features</li>
+      <li>To comply with legal and safety requirements</li>
     </ul>
 
-    <h2>3. Data Sharing</h2>
-    <p>We do not sell or share your personal data with third parties except:</p>
+    <h2>3. Data Sharing and Disclosure</h2>
+    <p>We never sell your personal data. However, we may share your data:</p>
     <ul>
-      <li>To comply with legal obligations</li>
-      <li>To protect and defend our rights or property</li>
-      <li>With trusted service providers who assist in app functionality (under strict confidentiality agreements)</li>
+      <li>With trusted partners (e.g., cloud services, analytics providers) under strict confidentiality agreements</li>
+      <li>To comply with applicable laws, regulations, or court orders</li>
+      <li>To enforce our rights or investigate misuse of the app</li>
     </ul>
 
     <h2>4. Data Security</h2>
-    <p>We implement reasonable security measures to protect your data. However, no method of transmission over the internet is 100% secure.</p>
+    <p>We implement industry-standard encryption, firewalls, and secure server technologies to protect your data. However, no digital system is 100% secure, so we encourage you to use strong passwords and update them regularly.</p>
 
-    <h2>5. Children's Privacy</h2>
-    <p>BookGenie is not intended for children under 13. We do not knowingly collect data from children under 13 years old.</p>
+    <h2>5. Children’s Privacy</h2>
+    <p>BookGenie is not directed to children under the age of 13. We do not knowingly collect information from children under 13. If you believe we have inadvertently collected such information, please contact us immediately.</p>
 
-    <h2>6. Your Rights</h2>
-    <p>You may access, modify, or delete your personal data by contacting us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:support@shanacoder.com">support@shanacoder.com</a></p>
+    <h2>6. Your Rights and Choices</h2>
+    <ul>
+      <li>You can access, update, or delete your account information at any time.</li>
+      <li>You may choose to opt out of marketing communications.</li>
+      <li>You can request a copy of your personal data we store.</li>
+      <li>To exercise these rights, contact us at <a href="mailto:support@shanacoder.com">support@shanacoder.com</a></li>
+    </ul>
 
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy occasionally. Any changes will be posted on this page with a revised “Effective Date”.</p>
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update this policy from time to time to reflect changes in our practices, technology, or legal requirements. All updates will be posted on this page with a revised effective date.</p>
 
     <h2>8. Contact Us</h2>
-    <p>If you have questions or concerns about this Privacy Policy, please contact us at:</p>
+    <p>If you have questions, concerns, or feedback about this policy, contact us at:</p>
     <p><strong>Email:</strong> <a href="mailto:support@shanacoder.com">support@shanacoder.com</a></p>
 
     <footer>
